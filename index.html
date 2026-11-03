@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9B2226">
+  <meta name="description" content="12one — in full surrender">
+  <title>12one | in full surrender</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #001219;
+      --dark-teal: #005F73;
+      --cyan: #0A9396;
+      --aqua: #94D2BD;
+      --vanilla: #E9D8A6;
+      --gold: #EE9B00;
+      --caramel: #CA6702;
+      --rust: #BB3E03;
+      --iron: #AE2012;
+      --red: #9B2226;
+      --paper: #FFFDF9;
+      --cream: #F8F3E9;
+      --line: #E9DED2;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font: 400 16px/1.85 'Montserrat', system-ui, -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-underline-offset: 4px; }
+    a:focus-visible { outline: 3px solid var(--cyan); outline-offset: 4px; border-radius: 3px; }
+    .site-header {
+      position: absolute; inset: 0 0 auto;
+      z-index: 3; width: 100%;
+    }
+    .header-inner {
+      max-width: 1160px; margin: auto;
+      padding: 22px 30px;
+      display: flex; align-items: center; justify-content: space-between; gap: 22px;
+      border-bottom: 1px solid #FFFFFF36;
+    }
+    .header-logo {
+      color: white; text-decoration: none;
+      font-size: 23px; line-height: 1.1; font-weight: 900; letter-spacing: -.07em;
+    }
+    .header-nav { display: flex; flex-wrap: wrap; gap: clamp(12px, 2.5vw, 28px); }
+    .header-nav a {
+      color: #FFF4EA; text-decoration: none;
+      font-size: 12px; line-height: 1.5; font-weight: 700; letter-spacing: .045em;
+      border-bottom: 1px solid transparent; transition: border-color .2s;
+    }
+    .header-nav a:hover { border-color: var(--vanilla); }
+    .hero {
+      position: relative; isolation: isolate; overflow: hidden;
+      min-height: min(780px, 88svh);
+      display: grid; align-items: center;
+      padding: 140px 24px 105px;
+      background: linear-gradient(128deg, #9B2226 0%, #AE2012 60%, #BB3E03 100%);
+      color: white; text-align: center;
+    }
+    .hero::before, .hero::after { content: ""; position: absolute; z-index: -1; pointer-events: none; }
+    .hero::before {
+      width: 750px; height: 750px; top: -455px; right: -215px;
+      border: 1px solid #FFFFFF34; border-radius: 50%;
+      box-shadow: 0 0 0 105px #FFFFFF08, 0 0 0 210px #FFFFFF06;
+    }
+    .hero::after {
+      width: 700px; height: 700px; bottom: -610px; left: -240px;
+      border: 2px solid #E9D8A66B; border-radius: 50%;
+      box-shadow: 0 0 0 80px #E9D8A610, 0 0 0 160px #E9D8A608;
+    }
+    .hero-inner { max-width: 920px; margin: 0 auto; }
+    .hero-title { font-size: clamp(86px, 17vw, 204px); line-height: .9; letter-spacing: -.095em; font-weight: 900; margin: 0 0 26px; }
+    .hero-tagline {
+      margin: 0; font-size: clamp(15px, 2vw, 23px); font-weight: 500;
+      letter-spacing: .34em; text-transform: lowercase; color: var(--vanilla);
+    }
+    .hero-rule { display: block; height: 3px; width: 74px; margin: 38px auto 0; background: var(--vanilla); border-radius: 99px; }
+    .section { padding: clamp(76px, 10vw, 132px) 24px; scroll-margin-top: 20px; }
+    .container { max-width: 1080px; margin: 0 auto; }
+    .narrow { max-width: 820px; margin: 0 auto; }
+    .section-kicker {
+      margin: 0 0 17px; color: var(--rust); font-size: 12px; line-height: 1.5;
+      font-weight: 800; text-transform: uppercase; letter-spacing: .22em;
+    }
+    h2 {
+      font-size: clamp(36px, 6vw, 64px);
+      line-height: 1.14; letter-spacing: -.06em; font-weight: 800;
+      margin: 0 0 36px; color: var(--red);
+    }
+    .mission { background: var(--paper); }
+    .statement {
+      font-size: clamp(23px, 3.6vw, 37px); line-height: 1.5;
+      letter-spacing: -.035em; font-weight: 700; margin: 0;
+    }
+    .reference { color: var(--dark-teal); font-weight: 700; margin: 16px 0 0; font-size: 14px; }
+    .divider { width: 70px; height: 3px; background: var(--iron); border: 0; margin: 43px 0; border-radius: 8px; }
+    .prose { max-width: 760px; }
+    .prose p { margin: 0 0 25px; }
+    .prose p:last-child { margin-bottom: 0; }
+    .vision {
+      background: var(--red); color: #FFF9F0;
+      position: relative; overflow: hidden;
+    }
+    .vision h2 { color: white; }
+    .vision .section-kicker { color: var(--vanilla); }
+    .vision .reference { color: var(--vanilla); }
+    .vision .divider { background: var(--vanilla); }
+    .vision .prose { color: #FFF1E8; }
+    .values { background: var(--cream); }
+    .values-header { margin-bottom: 48px; }
+    .values-header h2 { margin-bottom: 0; }
+    .values-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+    .value-card {
+      background: white; border: 1px solid var(--line); border-radius: 18px;
+      padding: clamp(27px, 3.5vw, 40px);
+      box-shadow: 0 10px 35px #0012190B;
+      position: relative; overflow: hidden;
+    }
+    .value-card::before {
+      content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 5px;
+      background: var(--red);
+    }
+    .value-card:nth-child(3n + 2)::before { background: var(--iron); }
+    .value-card:nth-child(3n + 3)::before { background: var(--dark-teal); }
+    .value-number { display: block; color: var(--caramel); font-size: 12px; font-weight: 800; letter-spacing: .15em; margin: 0 0 17px; }
+    .value-card h3 { color: var(--red); font-size: clamp(19px, 2.3vw, 24px); letter-spacing: -.04em; line-height: 1.36; margin: 0 0 18px; font-weight: 800; }
+    .value-card p { color: #344347; font-size: 14px; line-height: 1.85; margin: 0 0 18px; }
+    .value-card .reference { font-size: 12px; margin: 0; }
+    .closing {
+      background: var(--ink); text-align: center; color: white;
+      padding: 90px 24px 70px;
+    }
+    .closing .closing-tagline { font-size: clamp(18px, 3vw, 26px); letter-spacing: .22em; font-weight: 500; color: var(--vanilla); margin: 0 0 15px; }
+    .closing-logo { font-size: clamp(66px, 12vw, 115px); letter-spacing: -.085em; line-height: 1; font-weight: 900; margin: 0; }
+    .site-footer {
+      background: var(--ink); border-top: 1px solid #FFFFFF2B;
+      color: #E9D8A6; text-align: center;
+      padding: 27px 24px 42px; font-size: 13px; font-weight: 500;
+    }
+    .site-footer a { color: white; font-weight: 700; }
+    .site-footer p { margin: 4px 0; }
+    @media (max-width: 700px) {
+      .header-inner { padding: 20px; }
+      .header-nav { gap: 14px; }
+      .header-nav a { font-size: 10px; }
+      .hero { min-height: 590px; padding-top: 120px; }
+      .hero-tagline { letter-spacing: .18em; }
+      .values-grid { grid-template-columns: 1fr; }
+      .section { padding: 78px 22px; }
+    }
+    @media (max-width: 390px) {
+      .header-inner { flex-wrap: wrap; justify-content: center; gap: 10px; }
+      .hero-title { font-size: 85px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="header-logo" href="#top" aria-label="12one">12one</a>
+      <nav class="header-nav" aria-label="Page sections">
+        <a href="#mission">The Mission</a>
+        <a href="#vision">The Vision</a>
+        <a href="#values">The Values</a>
+      </nav>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero" aria-label="12one in full surrender">
+      <div class="hero-inner">
+        <h1 class="hero-title">12one</h1>
+        <p class="hero-tagline">in full surrender</p>
+        <span class="hero-rule" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <section class="section mission" id="mission">
+      <div class="narrow">
+        <h2>The Mission:</h2>
+        <p class="statement">To worship the Lord in everything I do and lead others in full surrender to Him.</p>
+        <p class="reference">- Romans 12:1</p>
+        <hr class="divider">
+        <div class="prose">
+          <p>That's my mission. Right there. I hope yours is similar. Let me ask you, when you pulled up this webpage, did you do it with the Lord? When you got up this morning, did you offer the day to Him? When you made that huge decision last month, did you inquire of the Lord and seek His Word for wisdom to follow His leading? When you breathed in and out about three times since starting to read this paragraph, did you take those breaths for the glory of God?</p>
+          <p>I believe it is possible, and God's desire, for me to live every moment, yes, every moment, for the Lord.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section vision" id="vision">
+      <div class="narrow">
+        <h2>The Vision:</h2>
+        <p class="statement">To be so fully devoted to God that every thought, word, and action reflects His heart for those around me, so that the gospel will be preached continuously through the way I conduct my life.</p>
+        <p class="reference">- Ephesians 3:17-4:24</p>
+        <hr class="divider">
+        <div class="prose">
+          <p>How does this mission culminate? In a life that truly represents Christ. That is the ultimate vision, for the glory of God, to bring others into His Kingdom.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section values" id="values">
+      <div class="container">
+        <div class="values-header"><h2>The Values:</h2></div>
+        <div class="values-grid">
+          <article class="value-card">
+            <span class="value-number" aria-hidden="true">01</span>
+            <h3>The Whole Word of God</h3>
+            <p>Recognizing Scripture as the foundation of truth in my life and for the world, and being committed to living under its authority</p>
+            <p class="reference">2 Timothy 3:16-17</p>
+          </article>
+          <article class="value-card">
+            <span class="value-number" aria-hidden="true">02</span>
+            <h3>Glorious Grace from God</h3>
+            <p>Remembering who I am because of God’s grace through Jesus Christ and freely receiving it daily, because I need it</p>
+            <p class="reference">Ephesians 1:4-8</p>
+          </article>
+          <article class="value-card">
+            <span class="value-number" aria-hidden="true">03</span>
+            <h3>Foundational Faith in God</h3>
+            <p>Never losing sight of the gospel through the work of Jesus Christ as the foundation of my faith and relationship with God</p>
+            <p class="reference">1 Corinthians 15:3-5</p>
+          </article>
+          <article class="value-card">
+            <span class="value-number" aria-hidden="true">04</span>
+            <h3>Purposeful Praise to God</h3>
+            <p>Committing myself to intentionally declare God’s greatness through prayer and song</p>
+            <p class="reference">Psalm 34:1</p>
+          </article>
+          <article class="value-card">
+            <span class="value-number" aria-hidden="true">05</span>
+            <h3>Constant Communication with God</h3>
+            <p>Continuously talking to the Lord throughout each day and being sensitive to the Holy Spirit’s guidance</p>
+            <p class="reference">1 Thessalonians 5:17</p>
+          </article>
+          <article class="value-card">
+            <span class="value-number" aria-hidden="true">06</span>
+            <h3>Committed Community through God</h3>
+            <p>Being actively engaged in the local church and living in unity with other believers through the power of the Holy Spirit</p>
+            <p class="reference">Hebrews 10:24-25</p>
+          </article>
+          <article class="value-card">
+            <span class="value-number" aria-hidden="true">07</span>
+            <h3>Worthy Work for God</h3>
+            <p>Working at every position, job, and task with all my heart, offering it as an act of worship</p>
+            <p class="reference">Colossians 3:17</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" aria-label="in full surrender 12one">
+      <p class="closing-tagline">in full surrender</p>
+      <p class="closing-logo">12one</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p><a href="https://12one.page">12one.page</a></p>
+    <p>in full surrender</p>
+    <p>© Austin Whyte 2026</p>
+  </footer>
+</body>
+</html>
