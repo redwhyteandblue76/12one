@@ -17,7 +17,7 @@ Standalone static page at /design/. No edits to the mission homepage.
 - All seven design options; desktop/mobile preview; three full-width style samples.
 - Live website price estimator: $50 setup + $40/hour, first page 3 hours, each additional page 2 hours. Verify 1 page = $170, 2 = $250, 5 = $490, 10 = $890.
 - Ongoing website updates and web/tech support are $40/hour; logo creation, branding and custom short links are available by individual quote and selectable in inquiries.
-- Free QR generator at /design/qr.html: verify HTTP(S) URL validation, dark color contrast, PNG sizes, SVG download, and scan both formats. Uses pinned qrcode-generator 1.4.4 from a CDN; generation runs locally in the browser. No client login required.
+- Complimentary QR generator access is advertised as a client benefit; access is provided separately by the business owner. No generator is implemented or hosted by this website.
 - Five inquiry steps, required fields, consent, disabled submission without configuration, confirmed success only.
 - Google Fonts requires network access. Design previews do not collect submissions.
 - Basic honeypot, field limits, spreadsheet formula escaping, locking, deduplication and rate limiting are included. Cache-based limits are best effort, not a guarantee against spam; consider stronger bot protection before high-volume launch.
