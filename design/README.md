@@ -1,5 +1,5 @@
 # Austin Whyte Web Design
-Standalone business website at /design/, with /design/showcase.html and /design/inquiry.html. No edits to the mission homepage.
+Standalone business website at /design/, with dedicated showcase.html, pricing.html, faq.html, about.html and inquiry.html pages. No edits to the mission homepage.
 
 ## Setup
 1. Review the pull request and preview the page on a local static server (e.g. python3 -m http.server 8000 from repository root, then /design/). Keep inquiries disabled until privacy, client communications and business arrangements have been reviewed with a parent/guardian where necessary.
@@ -14,8 +14,8 @@ Standalone business website at /design/, with /design/showcase.html and /design/
 10. After changing Apps Script, update the existing deployment to a new version. Check the page on mobile and desktop.
 
 ## Checks
-- All seven design concepts displayed vertically on showcase.html; jump navigation and desktop/mobile preview switch apply to all examples. Each style links to inquiry.html with the style preselected. Main page includes prominent links to both standalone pages.
-- Live website price estimator: $50 setup + $40/hour, first page 3 hours, each additional page 2 hours. Verify 1 page = $170, 2 = $250, 5 = $490, 10 = $890.
+- All seven design concepts displayed vertically on showcase.html; jump navigation and desktop/mobile preview switch apply to all examples. Each style links to inquiry.html with the style preselected. Main page includes prominent links to design examples, pricing, FAQs, About and project inquiry.
+- Live website price estimator on pricing.html: $50 setup + $40/hour, first page 3 hours, each additional page 2 hours. Verify 1 page = $170, 2 = $250, 5 = $490, 10 = $890.
 - Website design is featured as the primary service. Secondary offerings include graphic design (posters, business cards, flyers, brochures and event graphics), logo creation, branding, domain assistance, ongoing web/tech support and custom short links. Support is $40/hour; graphic design, branding, logo creation and short links are individually quoted. Verify graphic design is selectable in inquiries.
 - Complimentary QR generator access is advertised as a client benefit; access is provided separately by the business owner. No generator is implemented or hosted by this website.
 - Estimator links to inquiry.html?pages=N; confirm page count, hours and cost are prefilled on arrival. Five inquiry steps on the separate page, required fields, consent, disabled submission without configuration, confirmed success only.
