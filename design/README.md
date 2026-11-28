@@ -16,7 +16,7 @@ Standalone static page at /design/. No edits to the mission homepage.
 ## Checks
 - All seven design options; desktop/mobile preview; three full-width style samples.
 - Live website price estimator: $50 setup + $40/hour, first page 3 hours, each additional page 2 hours. Verify 1 page = $170, 2 = $250, 5 = $490, 10 = $890.
-- Ongoing website updates and web/tech support are $40/hour; logo creation, branding and custom short links are available by individual quote and selectable in inquiries.
+- Website design is featured as the primary service. Secondary offerings include graphic design (posters, business cards, flyers, brochures and event graphics), logo creation, branding, domain assistance, ongoing web/tech support and custom short links. Support is $40/hour; graphic design, branding, logo creation and short links are individually quoted. Verify graphic design is selectable in inquiries.
 - Complimentary QR generator access is advertised as a client benefit; access is provided separately by the business owner. No generator is implemented or hosted by this website.
 - Five inquiry steps, required fields, consent, disabled submission without configuration, confirmed success only.
 - Google Fonts requires network access. Design previews do not collect submissions.
