@@ -22,3 +22,5 @@ Standalone business website at /design/, with dedicated showcase.html, pricing.h
 - Google Fonts requires network access. Design previews do not collect submissions.
 - Basic honeypot, field limits, spreadsheet formula escaping, locking, deduplication and rate limiting are included. Cache-based limits are best effort, not a guarantee against spam; consider stronger bot protection before high-volume launch.
 - No browser or live Apps Script testing is implied by committing files. Confirm end-to-end operation before enabling public collection.
+
+- The shared policy page is /copyright.html; web design inquiry consent links directly to #web-design-inquiry. The legacy /design/privacy.html URL redirects to that section.
