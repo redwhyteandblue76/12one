@@ -15,8 +15,8 @@ Standalone static page at /design/. No edits to the mission homepage.
 
 ## Checks
 - All seven design options; desktop/mobile preview; three full-width style samples.
-- Countdown, calculator, sample registration, directory search, dashboard, QR generation, event schedule.
+- Live website price estimator: $50 setup + $40/hour, first page 3 hours, each additional page 2 hours. Verify 1 page = $170, 2 = $250, 5 = $490, 10 = $890.
 - Five inquiry steps, required fields, consent, disabled submission without configuration, confirmed success only.
-- QR generation uses the pinned qrcode-generator 1.4.4 CDN script; fonts also require network access. Demos do not store submissions.
+- Google Fonts requires network access. Design previews do not collect submissions.
 - Basic honeypot, field limits, spreadsheet formula escaping, locking, deduplication and rate limiting are included. Cache-based limits are best effort, not a guarantee against spam; consider stronger bot protection before high-volume launch.
 - No browser or live Apps Script testing is implied by committing files. Confirm end-to-end operation before enabling public collection.
