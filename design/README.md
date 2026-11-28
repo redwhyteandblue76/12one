@@ -17,8 +17,10 @@ Standalone business website at /design/, with dedicated showcase.html, pricing.h
 - All seven design concepts displayed vertically on showcase.html; jump navigation and desktop/mobile preview switch apply to all examples. Each style links to inquiry.html with the style preselected. Main page includes prominent links to design examples, pricing, FAQs, About and project inquiry.
 - Live website price estimator on pricing.html: $50 setup + $40/hour, first page 3 hours, each additional page 2 hours. Verify 1 page = $170, 2 = $250, 5 = $490, 10 = $890.
 - Website design is featured as the primary service. Secondary offerings include graphic design (posters, business cards, flyers, brochures and event graphics), logo creation, branding, domain assistance, ongoing web/tech support and custom short links. Support is $40/hour; graphic design, branding, logo creation and short links are individually quoted. Verify graphic design is selectable in inquiries.
-- Complimentary QR generator access is advertised as a client benefit; access is provided separately by the business owner. No generator is implemented or hosted by this website.
+- Client benefits include free QR generator access provided separately by the business owner, custom URL shortening by quote, Google Workspace integration assistance, and discussion of custom web tools. No QR generator is hosted by this website. Verify the inquiry options for integrations and custom web tools.
 - Estimator links to inquiry.html?pages=N; confirm page count, hours and cost are prefilled on arrival. Five inquiry steps on the separate page, required fields, consent, disabled submission without configuration, confirmed success only.
 - Google Fonts requires network access. Design previews do not collect submissions.
 - Basic honeypot, field limits, spreadsheet formula escaping, locking, deduplication and rate limiting are included. Cache-based limits are best effort, not a guarantee against spam; consider stronger bot protection before high-volume launch.
 - No browser or live Apps Script testing is implied by committing files. Confirm end-to-end operation before enabling public collection.
+
+- The shared policy page is /copyright.html; web design inquiry consent links directly to #web-design-inquiry. The legacy /design/privacy.html URL redirects to that section.
