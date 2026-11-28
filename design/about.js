@@ -1,0 +1,5 @@
+'use strict';
+const $=id=>document.getElementById(id);
+function node(tag,content,cls){const el=document.createElement(tag);if(content!==undefined)el.textContent=content;if(cls)el.className=cls;return el;}
+function cards(id,items){items.forEach(item=>{const card=node('article');card.append(node('h3',item[0]));if(item.length===3)card.append(node('p',item[1],'price'),node('p',item[2]));else card.append(node('p',item[1]));$(id).append(card);});}
+cards('values',[['Personal service','Work directly with your designer.'],['Affordability','Practical solutions that respect your budget.'],['Personalized design','Reflect your identity and goals.'],['Responsive layouts','Designed for phones, tablets and computers.'],['Flexible ownership','Manage your own site or request assistance.'],['Purpose-driven work','Integrity, intentionality and care.']]);
